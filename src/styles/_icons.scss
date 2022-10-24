@@ -3,6 +3,22 @@
         content: "";
         background-repeat: no-repeat;
     }
+    &-chevron{
+      &:before {
+        position: absolute;
+        content: url(/images/navbar/chevron-right.svg);
+        left: 220px;
+        right: 0px;
+        bottom: 4px;
+      }
+      &-active{
+        position: absolute;
+        content: url(/images/navbar/chevron-right-active.svg);
+        left: 220px;
+        right: 0px;
+        bottom: 14px;
+      }
+    }
     &-dashboard {
         &:before {
             background-image: url(/images/navbar/dashboard.svg);

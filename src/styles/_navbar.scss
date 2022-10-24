@@ -7,8 +7,8 @@
   &__heading {
     font-weight: 600;
     font-size: 26px;
-    line-height: 39px;
-    padding-bottom: 46px;
+    line-height: 46px;
+    padding-bottom: 34px;
   }
   &__content{
     padding: 31px 10px 13px 33px;
@@ -33,8 +33,9 @@
     font-weight: 500;
   }
   &__item {
-    margin: 23px 3px;
-    padding:0px 0px 15px 3px;
+    margin: 23px 0px;
+    padding: 6px 3px 10px 6px;
+    min-width: 243px;
     position: relative;
     font-size: 14px;
     font-weight: 500;
@@ -46,7 +47,7 @@
       color: white;
       background-color: #5932EA;
       border-radius: 8px;
-      padding: 10px;
+      padding: 9px 5px;
     }
   }
   &__icon{
