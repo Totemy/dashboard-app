@@ -1,0 +1,36 @@
+.icon{
+    &:before{
+        content: "";
+        background-repeat: no-repeat;
+    }
+    &-dashboard {
+        &:before {
+            background-image: url(/images/navbar/dashboard.svg);
+          }
+    }
+    &-product {
+        &:before {
+            background-image: url(/images/navbar/product.svg);
+          }
+    }
+    &-customers {
+        &:before {
+            background-image: url(/images/navbar/customers.svg);
+          }
+    }
+    &-income {
+        &:before {
+            background-image: url(/images/navbar/income.svg);
+          }
+    }
+    &-promote {
+        &:before {
+            background-image: url(/images/navbar/promote.svg);
+          }
+    }
+    &-help {
+      &:before {
+        background-image: url(/images/navbar/help.svg);
+      }
+    }
+}

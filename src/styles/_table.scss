@@ -1,0 +1,35 @@
+.table{
+    
+    th, td{
+        font-weight: 500;
+        font-size: 14px;
+        vertical-align: middle;
+        border-top: none;
+        &:first-child{
+            padding-left: 0px;
+            padding-right: 26px;
+        }
+        &:last-child{
+            padding-right: 0px;
+            padding-left: 10px;
+        }
+    }
+    th{
+        color: #B5B7C0;
+        padding: 32px 19px 15px 19px;
+        &:last-child{
+            text-align: center;
+        }
+    }
+    td{
+        border-bottom: 1px solid #EEEEEE;
+        color: #292D32;
+        padding: 19px 19px 20px 19px;
+        &:last-child{
+            text-align: right;
+        }
+    }
+}
+.table-wrapper{
+    padding: 0px 34px 0px 28px;
+}
