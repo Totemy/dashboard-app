@@ -3,6 +3,15 @@
         content: "";
         background-repeat: no-repeat;
     }
+    &-search{
+      &:before {
+        position: absolute;
+        background-image: url(/public/images/customers/search.svg);
+        width: 24px;
+        height: 24px;
+        display: block;
+      }
+    }
     &-chevron{
       &:before {
         position: absolute;

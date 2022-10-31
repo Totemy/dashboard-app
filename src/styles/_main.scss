@@ -8,6 +8,7 @@ body{
 .page{
     margin-left: 377px;
     margin-top: 43px;
+   
     &__header{
         display: flex;
         justify-content: space-between;
@@ -39,31 +40,31 @@ body{
         }
     }
     &__info{
+        padding: 16px 9px 3px 28px;
         font-size: 14px;
         font-weight: 500;
         line-height: 21px;
         color: #B5B7C0;
     }
+
 }
 .subtext{
     color:#16C098;
 }
-.searchbar{
-    background: #F9FBFF;
-    border-radius: 10px;
+.searchbar{ 
+    position: relative;
     &__input{
-        margin-top: 76px;
-        padding-left: 25px;
-        &:before {
-            content: "";
-            width: 24px;
-            height: 24px;
-            background-repeat: no-repeat;
-            background-image: url(/images/customers/search.svg);
-        }
+        border-radius: 10px;
+        border: 0px;
+        width: 216px;
+        margin-right: 45px;
+        margin-top: 84px;
+        padding: 3px 14px 3px 5px;
+        
+        
     }
     &__icon{
-        background-image: url(/images/customers/search.svg);
+        
         width: 24px;
         height: 24px;
     }

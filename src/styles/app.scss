@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "fonts";
 @import "vendors/bootstrap/bootstrap";
-@import "variables";
+@import "headings";
+@import "colors";
 @import "icons";
-@import  "navbar";
-@import  "customers";
-@import  "main";
+@import "navbar";
+@import "customers";
+@import "main";
 @import "button";
 @import "table";
