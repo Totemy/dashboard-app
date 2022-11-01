@@ -44,6 +44,9 @@
         &_active{
             background-color: $second-color;
             color: #FFFFFF;
+            &:hover{
+                color: #FFFFFF;
+            }
         }
     }
 }

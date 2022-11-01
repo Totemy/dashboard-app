@@ -4,6 +4,7 @@ body{
     background-repeat: no-repeat;
     background-position-x: left;
     font-family: 'Poppins', sans-serif;
+    
 }
 .page{
     margin-left: 377px;
@@ -68,7 +69,8 @@ body{
         border: 0px;
         width: 216px;
         margin-right: 45px;
-        padding: 3px 14px 3px 5px;
+        padding: 5px 14px 5px 27px;
+        background-color:#F9FBFF;
     }
     &__icon{
         width: 24px;
