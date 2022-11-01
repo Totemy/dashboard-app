@@ -1,6 +1,8 @@
 <template>
   <div class="navigation">
-    <i class="navigation__hamburger" @click="showMenu()"> </i>
+    <i class="navigation__hamburger" @click="showMenu()">
+      Menu
+    </i>
     <div
       class="navigation__content"
       :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'"

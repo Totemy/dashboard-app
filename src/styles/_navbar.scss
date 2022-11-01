@@ -9,9 +9,9 @@
   left: 0;
   top:0 ;
   &__hamburger{
-    background-color: #5932EA;
-    width: 50px;
+    background-color: $second-color;
     height: 50px;
+    color: #ffffff;
   }
   &__heading {
     font-weight: 600;
@@ -54,7 +54,7 @@
     color: #9197b3;
     &_active{
       color: white;
-      background-color: #5932EA;
+      background-color: $second-color;
       border-radius: 8px;
       padding: 9px 5px;
     }
@@ -75,14 +75,21 @@
     right: 0;
     z-index: 1030;
     top:0;
-    .navigation__content{
+    &__content{
       padding-top: 10px;
       position: absolute;
       width: 100%;
-      background-color: black;
+      background-color:#2a2e29 ;
     }
-    .navigation__items{
+    &__heading{
+      color: #ffffff;
+    }
+    &__items{
       flex-direction: column;
+      
+    }
+    &__item{
+      color: #ffffff;
     }
     .open-menu {
       opacity: 1;
@@ -95,7 +102,6 @@
     i{
         display: block;
         text-align: right;
-        padding: 0 10px 10px 0;
     }
   }
 }
@@ -107,6 +113,11 @@
   &__img{
     display: block;
     padding: 2px;
+  }
+  @include media-breakpoint-down(md) {
+    &__title{
+      color: #ffffff;
+    }
   }
 }
 

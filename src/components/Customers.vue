@@ -7,7 +7,7 @@
         </div>
         <div>
           <h4 class="page__article_level_3">
-            <span class="subtext">Active members</span>
+            <span class="subtext">Active Members</span>
           </h4>
         </div>
       </div>

@@ -8,7 +8,10 @@ body{
 .page{
     margin-left: 377px;
     margin-top: 43px;
-   
+    
+    &__title{
+        margin-bottom: 56px;
+    }
     &__header{
         display: flex;
         justify-content: space-between;
@@ -18,11 +21,12 @@ body{
         justify-content: space-between;
     }
     &__contnent{
-        padding: 10px 10px 10px 10px;
+        padding: 29px 10px 10px 10px;
         max-width: 968px;
+        border-radius: 30px;
+        background-color: #FFFFFF; 
     }
     &__article{
-        margin-top: 66px;
         margin-left: 28px;
         &_level_2{
             font-size: 22px;
@@ -58,16 +62,15 @@ body{
 }
 .searchbar{ 
     position: relative;
+    margin-top: 19px;
     &__input{
         border-radius: 10px;
         border: 0px;
         width: 216px;
         margin-right: 45px;
-        margin-top: 84px;
         padding: 3px 14px 3px 5px;
     }
     &__icon{
-        
         width: 24px;
         height: 24px;
     }
