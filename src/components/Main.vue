@@ -2,7 +2,7 @@
   <div class="page">
     <h4>Hello,{{ name }}👋🏼, <span class="icon icon-hello"></span></h4>
 
-    <div>
+    <div class="">
       <Customers />
     </div>
   </div>

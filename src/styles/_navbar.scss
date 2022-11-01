@@ -1,9 +1,18 @@
 .navigation {
-  //background-color: #ffffff;
+  background-color: #ffffff;
+  i {
+    display: none;
+    }
+
   height: 100%;
   position: fixed;
   left: 0;
   top:0 ;
+  &__hamburger{
+    background-color: #5932EA;
+    width: 50px;
+    height: 50px;
+  }
   &__heading {
     font-weight: 600;
     font-size: 26px;
@@ -58,6 +67,35 @@
         width: 24px;
         height: 24px;
         display: block;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    position: relative;
+    height: auto;
+    right: 0;
+    z-index: 1030;
+    top:0;
+    .navigation__content{
+      padding-top: 10px;
+      position: absolute;
+      width: 100%;
+      background-color: black;
+    }
+    .navigation__items{
+      flex-direction: column;
+    }
+    .open-menu {
+      opacity: 1;
+      }
+    .closed-menu {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+    }
+    i{
+        display: block;
+        text-align: right;
+        padding: 0 10px 10px 0;
     }
   }
 }

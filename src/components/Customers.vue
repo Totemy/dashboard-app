@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="table-wrapper">
+    <div class="table-wrapper table-responsive">
       <table class="table">
         <tr>
           <th scope="col">Customer Name</th>

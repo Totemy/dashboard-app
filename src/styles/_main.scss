@@ -1,6 +1,6 @@
 body{
     background-color: $bg-color;
-    background-image: url(/images/Dashboard.png);
+    //background-image: url(/images/Dashboard.png);
     background-repeat: no-repeat;
     background-position-x: left;
     font-family: 'Poppins', sans-serif;
@@ -46,7 +46,12 @@ body{
         line-height: 21px;
         color: #B5B7C0;
     }
-
+    @include media-breakpoint-down(md){
+        margin-left: 0;
+        &__header{
+            flex-wrap: wrap;
+        }
+    }
 }
 .subtext{
     color:#16C098;
@@ -60,12 +65,15 @@ body{
         margin-right: 45px;
         margin-top: 84px;
         padding: 3px 14px 3px 5px;
-        
-        
     }
     &__icon{
         
         width: 24px;
         height: 24px;
+    }
+    @include media-breakpoint-down(md){
+        &__input{
+            margin: 20px;
+        }
     }
 }

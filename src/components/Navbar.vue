@@ -1,6 +1,10 @@
 <template>
   <div class="navigation">
-    <div class="navigation__content">
+    <i class="navigation__hamburger" @click="showMenu()"> </i>
+    <div
+      class="navigation__content"
+      :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'"
+    >
       <div>
         <h2 class="navigation__heading">
           <span class="navigation__logo"></span>Dashboard
@@ -32,7 +36,6 @@
           <span class="icon icon-chevron navigation__icon"></span>
         </div>
       </div>
-
       <div class="profile">
         <div class="profile__img">
           <img src="images/navbar/avatar.png" />
@@ -49,3 +52,17 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      showMobileMenu: false
+    };
+  },
+  methods: {
+    showMenu() {
+      this.showMobileMenu = !this.showMobileMenu;
+    }
+  }
+};
+</script>
