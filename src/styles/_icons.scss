@@ -6,10 +6,15 @@
     &-search{
       &:before {
         position: absolute;
-        background-image: url(/public/images/customers/search.svg);
+        background-image: url(/images/customers/search.svg);
         width: 24px;
         height: 24px;
+        top: 6px;
         display: block;
+        @include media-breakpoint-down(md){
+          top: 25px;
+          left: 22px;
+        }
       }
     }
     &-chevron{

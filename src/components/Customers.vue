@@ -18,24 +18,25 @@
     </div>
 
     <div class="table-wrapper table-responsive">
-      <table class="table">
-        <tr>
-          <th scope="col">Customer Name</th>
-          <th scope="col">Company</th>
-          <th scope="col">Phone number</th>
-          <th scope="col">Email</th>
-          <th scope="col">Country</th>
-          <th scope="col">Status</th>
-        </tr>
-        <tr v-for="(product, index) in products" :key="index">
-          <td>
+      <div class="table">
+        <div class="row">
+          <div class="col table__th">Customer Name</div>
+          <div class="col table__th">Company</div>
+          <div class="col table__th">Phone number</div>
+          <div class="col table__th">Email</div>
+          <div class="col table__th">Country</div>
+          <div class="col table__th">Status</div>
+        </div>
+        <div class="row" v-for="(product, index) in products" :key="index">
+          <TableHeader class=" col d-none"></TableHeader>
+          <div class="col table__td">
             {{ product.name }}
-          </td>
-          <td>{{ product.company }}</td>
-          <td>{{ product.phone }}</td>
-          <td>{{ product.email }}</td>
-          <td>{{ product.country }}</td>
-          <td>
+          </div>
+          <div class="col table__td">{{ product.company }}</div>
+          <div class="col table__td">{{ product.phone }}</div>
+          <div class="col table__td">{{ product.email }}</div>
+          <div class="col table__td">{{ product.country }}</div>
+          <div class="col table__td">
             <button
               class="btn"
               :class="{
@@ -45,9 +46,9 @@
             >
               {{ product.status }}
             </button>
-          </td>
-        </tr>
-      </table>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="page__header">
       <div class="page__info">Showing data 1 to 8 of 256K entries</div>
@@ -89,8 +90,12 @@
   </div>
 </template>
 <script>
+import TableHeader from "@/components/TableHeader.vue";
 import productsData from "@/json/products.json";
 export default {
+  components: {
+    TableHeader
+  },
   data() {
     return {
       products: []
