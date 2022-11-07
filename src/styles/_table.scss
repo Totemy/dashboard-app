@@ -8,27 +8,22 @@
         font-size: 14px;
         vertical-align: middle;
         border-top: none;
-        text-align: center;
-        &:first-child{
-            padding-left: 0px;
-            padding-right: 26px;
-        }
-        &:last-child{
-            padding-right: 0px;
-            padding-left: 10px;
-        }
     }
     &__th{
         color: #B5B7C0;
-        padding: 32px 19px 15px 19px;
+        padding: 32px 32px 15px 3px;
+        &:first-child{
+            padding-left: 13px;
+        }
         &:last-child{
             text-align: center;
+            padding-right: 0px;
         }
     }
     &__td{
         border-bottom: 1px solid #EEEEEE;
         color: #292D32;
-        padding: 19px 19px 20px 19px;
+        padding: 19px 14px 20px 14px;
         &:last-child{
             text-align: right;
         }

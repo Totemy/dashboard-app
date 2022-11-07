@@ -9,15 +9,22 @@
   left: 0;
   top:0 ;
   &__hamburger{
+    @include media-breakpoint-up(md) {display: none;}
     background-color: $second-color;
-    height: 50px;
+    height: 100%;
+    width: 60px;
     color: #ffffff;
   }
   &__heading {
+    @include media-breakpoint-down(md) {display: none;}
     font-weight: 600;
     font-size: 26px;
     line-height: 46px;
     padding-bottom: 34px;
+    &_mobile{
+      @include media-breakpoint-up(md) {display: none;}
+      margin: 10px;
+    }
   }
   &__content{
     padding: 31px 10px 13px 33px;
@@ -52,6 +59,10 @@
     letter-spacing: -0.01em;
     text-align: left;
     color: #9197b3;
+    @include media-breakpoint-down(md) {
+      min-width: 100%;
+      text-align: center;
+    }
     &_active{
       color: white;
       background-color: $second-color;
@@ -121,4 +132,3 @@
     }
   }
 }
-

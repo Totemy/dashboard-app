@@ -24,6 +24,9 @@
         left: 220px;
         right: 0px;
         bottom: 4px;
+        @include media-breakpoint-down(md) {
+          left:auto;
+        }
       }
       &-active{
         position: absolute;
@@ -31,6 +34,9 @@
         left: 220px;
         right: 0px;
         bottom: 14px;
+        @include media-breakpoint-down(md) {
+          left:auto;
+        }
       }
     }
     &-dashboard {

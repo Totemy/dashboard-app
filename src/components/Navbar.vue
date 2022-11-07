@@ -1,8 +1,23 @@
 <template>
   <div class="navigation">
-    <i class="navigation__hamburger" @click="showMenu()">
-      Menu
-    </i>
+    <div class="row">
+      <div class="col ">
+        <div class="navigation__hamburger">
+          <button class="navbar-toggler  " @click="showMenu()">
+            <span class="span__navbar"></span>
+            <span class="span__navbar"></span>
+            <span class="span__navbar"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-auto">
+        <h2 class="navigation__heading_mobile">
+          <span class="navigation__logo"></span>Dashboard
+          <span class="navigation__version">v.01</span>
+        </h2>
+      </div>
+    </div>
+
     <div
       class="navigation__content"
       :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'"
