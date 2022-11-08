@@ -1,16 +1,17 @@
 body{
     background-color: $bg-color;
-    //background-image: url(/images/Dashboard.png);
+    //@at-root: url(/images/Dashboard.png);
     background-repeat: no-repeat;
     background-position-x: left;
     font-family: 'Poppins', sans-serif;
     
 }
 .page{
-    margin-left: 377px;
+    margin-left:  346px;
     margin-top: 43px;
     
     &__title{
+        padding-left: 31px;
         margin-bottom: 56px;
     }
     &__header{
@@ -56,6 +57,10 @@ body{
         margin-left: 0;
         &__header{
             flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__info{
+            padding: 0px;
         }
     }
 }

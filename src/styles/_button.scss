@@ -49,4 +49,8 @@
             }
         }
     }
+    @include media-breakpoint-down(md)
+    {
+        padding-right: 0px;
+    }
 }
