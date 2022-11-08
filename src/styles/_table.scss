@@ -1,8 +1,14 @@
 .table{
     .row{
         //justify-content: space-around;
+   
     }
-
+    &__item{
+        @include media-breakpoint-down(md){
+            border-bottom: solid;
+            border: 1px, black;
+        }
+    }
     &__th, &__td{
         font-weight: 500;
         font-size: 14px;
@@ -36,15 +42,10 @@
                 text-align: left;
             }
             @include make-col(6);
+            border: none;
         }
 
-    }
-    &__mobile{
-        @include media-breakpoint-up(md){
-            display: none;
-        }
-    }
-    
+    }    
 }
 .table-wrapper{
     padding: 0px 34px 0px 28px;

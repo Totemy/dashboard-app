@@ -27,7 +27,11 @@
           <div class="col table__th">Country</div>
           <div class="col table__th">Status</div>
         </div>
-        <div class="row" v-for="(product, index) in products" :key="index">
+        <div
+          class="row table__item"
+          v-for="(product, index) in products"
+          :key="index"
+        >
           <div class="col table__td d-lg-none">Customer Name</div>
           <div class="col table__td">
             {{ product.name }}

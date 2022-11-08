@@ -4,7 +4,7 @@
       Hello,{{ name }}👋🏼, <span class="icon icon-hello"></span>
     </h4>
 
-    <div class="">
+    <div>
       <Customers />
     </div>
   </div>
