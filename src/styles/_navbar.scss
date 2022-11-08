@@ -1,5 +1,5 @@
 .navigation {
-  background-color: #ffffff;
+  background-color: $whiteColor;
   .row{
     margin-right:0px ;
   }
@@ -16,7 +16,7 @@
     background-color: $second-color;
     height: 100%;
     width: 60px;
-    color: #ffffff;
+    color: $whiteColor;
   }
   &__heading {
     @include media-breakpoint-down(md) {display: none;}
@@ -61,13 +61,13 @@
     line-height: 21px;
     letter-spacing: -0.01em;
     text-align: left;
-    color: #9197b3;
+    color: $navbarItemColor;
     @include media-breakpoint-down(md) {
       min-width: 100%;
       text-align: center;
     }
     &_active{
-      color: white;
+      color: $whiteColor;
       background-color: $second-color;
       border-radius: 8px;
       padding: 9px 5px;
@@ -93,17 +93,17 @@
       padding-top: 10px;
       position: absolute;
       width: 100%;
-      background-color:#2a2e29 ;
+      background-color:$navbarContentColor;
     }
     &__heading{
-      color: #ffffff;
+      color: $whiteColor;
     }
     &__items{
       flex-direction: column;
       
     }
     &__item{
-      color: #ffffff;
+      color: $whiteColor;
       width: 0;
     }
     .open-menu {
@@ -120,6 +120,16 @@
     }
   }
 }
+.navbar-toggler{
+  padding: 15px;
+}
+.span__navbar{
+  display:block;
+  width: 21px;
+  padding: 2px;
+  border-top: 3px solid $bg-color;
+}
+
 .profile{
   display: flex;
   position: absolute;
@@ -137,7 +147,7 @@
     bottom: 0px;
     justify-content: center;
     &__title{
-      color: #ffffff;
+      color: $whiteColor;
     }
   }
 }

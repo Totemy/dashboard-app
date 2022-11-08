@@ -2,10 +2,9 @@
     width: 80px;
     &__active{
         background: rgba(22, 192, 152, 0.38);
-        border: 1px solid #00B087;
+        border: 1px solid $btnActiveBorder;
         border-radius: 4px;
-        color:#008767; //
-        //margin: 19px 33px 20px 29px;
+        color:$btnActiveColor; 
         padding: 2px 12px 1px 17px;
         text-align: center;
 
@@ -15,42 +14,10 @@
     }
     &__inactive{
         background: #FFC5C5;
-        border: 1px solid #DF0404;
+        border: 1px solid $btnInactiveBorder;
         border-radius: 4px;
-        color: #DF0404;
+        color: $btnInactiveColor;
         padding: 2px 12px 1px 8px;
         text-align: center;
-    }
-}
-.pagination{
-    padding-top: 8px;
-    padding-right: 27px;
-    &__dot{
-        padding: 4px;
-    }
-    &__item{
-        padding: 4px;
-        justify-content: center;
-        align-items: center;
-    }
-    &__link{
-        border: 1px solid #EEEEEE;
-        border-radius: 4px;
-        padding: 4px 9px;
-        background-color: #F5F5F5;
-        color: #404B52;
-        font-weight: 500;
-        font-size: 12px;
-        &_active{
-            background-color: $second-color;
-            color: #FFFFFF;
-            &:hover{
-                color: #FFFFFF;
-            }
-        }
-    }
-    @include media-breakpoint-down(md)
-    {
-        padding-right: 0px;
     }
 }

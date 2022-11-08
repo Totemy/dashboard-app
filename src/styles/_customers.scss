@@ -1,0 +1,24 @@
+.searchbar{ 
+    position: relative;
+    margin-top: 19px;
+    &__input{
+        border-radius: 10px;
+        border: 0px;
+        width: 216px;
+        margin-right: 45px;
+        padding: 5px 14px 5px 27px;
+        background-color:$bg-color;
+    }
+    &__icon{
+        width: 24px;
+        height: 24px;
+    }
+    @include media-breakpoint-down(md){
+        &__input{
+            margin: 20px;
+        }
+    }
+}
+.subtext{
+    color:$subtextColor;
+}

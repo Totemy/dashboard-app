@@ -16,7 +16,7 @@
         border-top: none;
     }
     &__th{
-        color: #B5B7C0;
+        color: $pageInfoColor;   // not pageinfo but same color
         padding: 32px 32px 15px 3px;
         &:first-child{
             padding-left: 13px;
@@ -31,8 +31,8 @@
         
     }
     &__td{
-        border-bottom: 1px solid #EEEEEE;
-        color: #292D32;
+        border-bottom: 1px solid $firstBorderColor;
+        color: $tableTdColor;
         padding: 19px 14px 20px 14px;
         &:last-child{
             text-align: right;
