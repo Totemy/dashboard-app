@@ -28,14 +28,19 @@
           <div class="col table__th">Status</div>
         </div>
         <div class="row" v-for="(product, index) in products" :key="index">
-          <TableHeader class=" col d-none"></TableHeader>
+          <div class="col table__td d-lg-none">Customer Name</div>
           <div class="col table__td">
             {{ product.name }}
           </div>
+          <div class="col table__td d-lg-none">Company</div>
           <div class="col table__td">{{ product.company }}</div>
+          <div class="col table__td d-lg-none">Phone number</div>
           <div class="col table__td">{{ product.phone }}</div>
+          <div class="col table__td d-lg-none">Email</div>
           <div class="col table__td">{{ product.email }}</div>
+          <div class="col table__td d-lg-none">Country</div>
           <div class="col table__td">{{ product.country }}</div>
+          <div class="col table__td d-lg-none">Status</div>
           <div class="col table__td">
             <button
               class="btn"
@@ -90,12 +95,9 @@
   </div>
 </template>
 <script>
-import TableHeader from "@/components/TableHeader.vue";
 import productsData from "@/json/products.json";
 export default {
-  components: {
-    TableHeader
-  },
+  components: {},
   data() {
     return {
       products: []

@@ -119,6 +119,9 @@
 }
 .profile{
   display: flex;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
   &__title{
     margin-left: 25px;
   }
@@ -127,6 +130,9 @@
     padding: 2px;
   }
   @include media-breakpoint-down(md) {
+    position: relative;
+    bottom: 0px;
+    justify-content: center;
     &__title{
       color: #ffffff;
     }
