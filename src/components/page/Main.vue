@@ -10,7 +10,7 @@
   </div>
 </template>
 <script>
-import Customers from "@/components/Customers.vue";
+import Customers from "../customers/Customers.vue";
 export default {
   components: {
     Customers
