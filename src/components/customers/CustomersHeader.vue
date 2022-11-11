@@ -1,11 +1,11 @@
 <template>
-  <div class="page__header">
-    <div class="page__article">
+  <div class="main__header">
+    <div class="main__article">
       <div>
-        <h2 class="page__article_level_2">All Customers</h2>
+        <h2 class="main__title">All Customers</h2>
       </div>
       <div>
-        <h4 class="page__article_level_3">
+        <h4 class="main__subtitle">
           <span class="subtext">Active Members</span>
         </h4>
       </div>

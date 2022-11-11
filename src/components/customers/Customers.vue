@@ -1,9 +1,11 @@
 <template>
   <div class="container">
-    <div class="page__contnent">
-      <CustomersHeader />
-      <Table />
-      <CustomersFooter />
+    <div class="main">
+      <div class="main__content">
+        <CustomersHeader />
+        <Table />
+        <CustomersFooter />
+      </div>
     </div>
   </div>
 </template>

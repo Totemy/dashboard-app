@@ -1,18 +1,18 @@
 <template>
   <div class="m-0">
-    <Dasboard />
+    <Navbar />
     <Main />
   </div>
 </template>
 
 <script>
-import Dasboard from "./components/navbar/Navbar.vue";
+import Navbar from "./components/navbar/Navbar.vue";
 import Main from "./components/page/Main.vue";
 
 export default {
   components: {
     Main,
-    Dasboard
+    Navbar
   }
 };
 </script>

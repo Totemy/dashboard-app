@@ -3,10 +3,10 @@
         content: "";
         background-repeat: no-repeat;
     }
-    &-search{
+    &-search{   // - to _
       &:before {
         position: absolute;
-        background-image: url(/images/customers/search.svg);
+        content: url(/images/customers/search.svg);
         width: 24px;
         height: 24px;
         top: 6px;
@@ -17,11 +17,10 @@
         }
       }
     }
-    &-chevron{
+    &-chevron{ //right arrow
       &:before {
         position: absolute;
-        content: url(/images/navbar/chevron-right.svg);
-        left: 220px;
+        content: url(/images/navbar/chevron-right.svg); //right arrow
         right: 0px;
         bottom: 4px;
         @include media-breakpoint-down(md) {
@@ -30,8 +29,7 @@
       }
       &-active{
         position: absolute;
-        content: url(/images/navbar/chevron-right-active.svg);
-        left: 220px;
+        content: url(/images/navbar/chevron-right-active.svg); //image mask in svg
         right: 0px;
         bottom: 14px;
         @include media-breakpoint-down(md) {
@@ -41,32 +39,32 @@
     }
     &-dashboard {
         &:before {
-            background-image: url(/images/navbar/dashboard.svg);
+            content:  url(/images/navbar/dashboard.svg);
           }
     }
     &-product {
         &:before {
-            background-image: url(/images/navbar/product.svg);
+            content:  url(/images/navbar/product.svg);
           }
     }
     &-customers {
         &:before {
-            background-image: url(/images/navbar/customers.svg);
+            content:  url(/images/navbar/customers.svg);
           }
     }
     &-income {
         &:before {
-            background-image: url(/images/navbar/income.svg);
+            content:  url(/images/navbar/income.svg);
           }
     }
     &-promote {
         &:before {
-            background-image: url(/images/navbar/promote.svg);
+            content:  url(/images/navbar/promote.svg);
           }
     }
     &-help {
       &:before {
-        background-image: url(/images/navbar/help.svg);
+        content:  url(/images/navbar/help.svg);
       }
     }
 }

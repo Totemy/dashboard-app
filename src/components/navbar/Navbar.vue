@@ -1,12 +1,12 @@
 <template>
   <div class="navigation">
     <div class="row">
-      <div class="col ">
-        <div class="navigation__hamburger">
-          <button class="navbar-toggler  " @click="showMenu()">
-            <span class="span__navbar"></span>
-            <span class="span__navbar"></span>
-            <span class="span__navbar"></span>
+      <div class="col">
+        <div class="burger-btn navigation__hamburger ">
+          <button class="navigatin__togler" @click="showMenu()">
+            <span class="burger-btn__item"></span>
+            <span class="burger-btn__item"></span>
+            <span class="burger-btn__item"></span>
           </button>
         </div>
       </div>
@@ -20,7 +20,11 @@
 
     <div
       class="navigation__content"
-      :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'"
+      :class="
+        this.showMobileMenu
+          ? 'navigation__open-menu'
+          : 'navigation__closed-menu'
+      "
     >
       <div>
         <h2 class="navigation__heading">

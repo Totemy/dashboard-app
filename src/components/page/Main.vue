@@ -1,8 +1,7 @@
 <template>
   <div class="page">
-    <h4 class="page__title">
-      Hello,{{ name }}👋🏼, <span class="icon icon-hello"></span>
-    </h4>
+    <h4 class="page__title">Hello {{ name }}👋🏼,</h4>
+    <!--page__welcome-text -->
 
     <div>
       <Customers />
@@ -10,7 +9,7 @@
   </div>
 </template>
 <script>
-import Customers from "../customers/Customers.vue";
+import Customers from "@/components/customers/Customers.vue";
 export default {
   components: {
     Customers

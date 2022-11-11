@@ -1,6 +1,6 @@
 <template>
-  <div class="page__header">
-    <div class="page__info">Showing data 1 to 8 of 256K entries</div>
+  <div class="main__footer">
+    <div class="main__search-info">Showing data 1 to 8 of 256K entries</div>
     <div>
       <ul class="pagination">
         <li class="pagination__item">

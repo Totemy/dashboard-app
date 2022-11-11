@@ -1,23 +1,30 @@
 .btn{
     width: 80px;
+    text-align: center;
+    border-radius: 4px;
     &__active{
         background: rgba(22, 192, 152, 0.38);
-        border: 1px solid $btnActiveBorder;
-        border-radius: 4px;
+        border: 1px solid $btnActiveBorderColor;
         color:$btnActiveColor; 
         padding: 2px 12px 1px 17px;
-        text-align: center;
-
-
-
-        margin-right: 0px;
     }
     &__inactive{
         background: #FFC5C5;
         border: 1px solid $btnInactiveBorder;
-        border-radius: 4px;
         color: $btnInactiveColor;
         padding: 2px 12px 1px 8px;
-        text-align: center;
+    }
+}
+.burger-btn{
+    @include media-breakpoint-up(md) {display: none;}
+    background-color: $second-color;
+    height: 100%;
+    width: 60px;
+    color: $whiteColor;
+    &__item{   
+        display:block;
+        width: 21px;
+        padding: 2px;
+        border-top: 3px solid $bgСolor;
     }
 }

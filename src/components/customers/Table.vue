@@ -1,5 +1,5 @@
 <template>
-  <div class="table-wrapper table-responsive">
+  <div class="table-wrapper">
     <div class="table">
       <div class="row">
         <div class="col table__th">Customer Name</div>
@@ -31,8 +31,8 @@
           <button
             class="btn"
             :class="{
-              btn__active: product.active,
-              btn__inactive: !product.active
+              btn__active: product.status.toLowerCase() == 'active',
+              btn__inactive: product.status.toLowerCase() == 'inactive'
             }"
           >
             {{ product.status }}
@@ -53,7 +53,6 @@ export default {
   },
   created() {
     this.products = productsData;
-  },
-  checkActive() {}
+  }
 };
 </script>

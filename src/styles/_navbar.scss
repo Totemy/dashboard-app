@@ -1,22 +1,11 @@
 .navigation {
   background-color: $whiteColor;
-  .row{
-    margin-right:0px ;
-  }
-  i {
-    display: none;
-    }
-
   height: 100%;
   position: fixed;
   left: 0;
   top:0 ;
-  &__hamburger{
-    @include media-breakpoint-up(md) {display: none;}
-    background-color: $second-color;
-    height: 100%;
-    width: 60px;
-    color: $whiteColor;
+  &__toggler{
+    padding: 15px;
   }
   &__heading {
     @include media-breakpoint-down(md) {display: none;}
@@ -106,10 +95,10 @@
       color: $whiteColor;
       width: 0;
     }
-    .open-menu {
+    &__open-menu {
       opacity: 1;
       }
-    .closed-menu {
+    &__closed-menu {
       opacity: 0;
       height: 0;
       padding: 0;
@@ -120,16 +109,6 @@
     }
   }
 }
-.navbar-toggler{
-  padding: 15px;
-}
-.span__navbar{
-  display:block;
-  width: 21px;
-  padding: 2px;
-  border-top: 3px solid $bg-color;
-}
-
 .profile{
   display: flex;
   position: absolute;
