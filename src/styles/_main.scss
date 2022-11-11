@@ -1,6 +1,6 @@
 body{
-    background-color: $bgСolor;
-    //@at-root: url(/images/Dashboard.png);
+    background-color: $mainBackground;
+    //background-image: url(/images/Dashboard.png);
     background-repeat: no-repeat;
     background-position-x: left;
     font-family: 'Poppins', sans-serif;
@@ -10,7 +10,7 @@ body{
     &__content{
         border-radius: 30px;
         padding: 29px 10px 10px 10px;
-        background-color: rgba(255, 0, 0, 0.2); 
+        background-color: $whiteColor;
     }
     &__header{
         display: flex;

@@ -1,6 +1,6 @@
 <template>
-  <div class="table-wrapper">
-    <div class="table">
+  <div class="table">
+    <div class="table-wrapper">
       <div class="row">
         <div class="col table__th">Customer Name</div>
         <div class="col table__th">Company</div>
