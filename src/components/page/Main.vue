@@ -1,8 +1,6 @@
 <template>
   <div class="page">
-    <h4 class="page__title">Hello {{ name }}👋🏼,</h4>
-    <!--page__welcome-text -->
-
+    <h4 class="page__welcome-text">Hello {{ name }}👋🏼,</h4>
     <div>
       <Customers />
     </div>

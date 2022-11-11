@@ -14,20 +14,20 @@
         v-for="(product, index) in products"
         :key="index"
       >
-        <div class="col table__td d-lg-none">Customer Name</div>
-        <div class="col table__td">
+        <div class="col-2 table__td d-lg-none">Customer Name</div>
+        <div class="col-2 table__td">
           {{ product.name }}
         </div>
-        <div class="col table__td d-lg-none">Company</div>
-        <div class="col table__td">{{ product.company }}</div>
-        <div class="col table__td d-lg-none">Phone number</div>
-        <div class="col table__td">{{ product.phone }}</div>
-        <div class="col table__td d-lg-none">Email</div>
-        <div class="col table__td">{{ product.email }}</div>
-        <div class="col table__td d-lg-none">Country</div>
-        <div class="col table__td">{{ product.country }}</div>
-        <div class="col table__td d-lg-none">Status</div>
-        <div class="col table__td">
+        <div class="col-2 table__td d-lg-none">Company</div>
+        <div class="col-2 table__td">{{ product.company }}</div>
+        <div class="col-2 table__td d-lg-none">Phone number</div>
+        <div class="col-2 table__td">{{ product.phone }}</div>
+        <div class="col-2 table__td d-lg-none">Email</div>
+        <div class="col-3 table__td">{{ product.email }}</div>
+        <div class="col-3 table__td d-lg-none">Country</div>
+        <div class="col-1 table__td">{{ product.country }}</div>
+        <div class="col-2 table__td d-lg-none">Status</div>
+        <div class="col-2 table__td">
           <button
             class="btn"
             :class="{
