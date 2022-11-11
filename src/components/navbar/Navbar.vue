@@ -27,20 +27,24 @@
       "
     >
       <div>
-        <h2 class="navigation__heading">
+        <h2 @click="goMain()" class="navigation__heading">
           <span class="navigation__logo"></span>Dashboard
           <span class="navigation__version">v.01</span>
         </h2>
       </div>
       <div class="navigation__items">
-        <div class=" navigation__item">
-          <span class="icon icon-dashboard navigation__icon"></span> Dashboard
+        <div @click="goDashboard()" class=" navigation__item">
+          <span class="icon icon-dashboard navigation__icon"></span>
+          Dashboard
         </div>
         <div class=" navigation__item">
           <span class="icon icon-product navigation__icon"></span> Product
           <span class="icon icon-chevron navigation__icon"></span>
         </div>
-        <div class=" navigation__item navigation__item_active">
+        <div
+          @click="goCustomers()"
+          class=" navigation__item navigation__item_active"
+        >
           <span class="icon icon-customers navigation__icon"></span> Customers
           <span class="icon icon-chevron-active navigation__icon"></span>
         </div>
@@ -83,6 +87,15 @@ export default {
   methods: {
     showMenu() {
       this.showMobileMenu = !this.showMobileMenu;
+    },
+    goMain() {
+      this.$router.push({ name: "Main" });
+    },
+    goDashboard() {
+      this.$router.push({ name: "Dashboard" });
+    },
+    goCustomers() {
+      this.$router.push({ name: "Customers" });
     }
   }
 };

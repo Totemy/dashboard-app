@@ -2,6 +2,7 @@
   <div class="m-0">
     <Navbar />
     <Main />
+    <router-view :key="$route.path" class="page" />
   </div>
 </template>
 
