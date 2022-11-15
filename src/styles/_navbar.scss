@@ -8,11 +8,16 @@
     padding: 15px;
   }
   &__heading {
+
     @include media-breakpoint-down(md) {display: none;}
     font-weight: 600;
     font-size: 26px;
     line-height: 46px;
     padding-bottom: 34px;
+    &::before{
+
+      content: url(/images/icons/logo.svg);
+    }
     &_mobile{
       @include media-breakpoint-up(md) {display: none;}
       margin: 10px;
@@ -21,20 +26,7 @@
   &__content{
     padding: 31px 10px 13px 33px;
   }
-  &__logo {
-    position: relative;
-    margin-left: 40px;
-    &:before {
-      content: "";
-      position: absolute;
-      background-image: url(/images/icons/logo.svg);
-      background-repeat: no-repeat;
-      left: -44px;
-      right: 0px;
-      bottom: -4px;
-      height: 100%;
-    }
-  }
+
   &__version {
     font-size: 10px;
     line-height: 15px;

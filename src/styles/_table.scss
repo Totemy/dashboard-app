@@ -1,8 +1,4 @@
 .table{
-    .row{
-        //justify-content: space-around;
-   
-    }
     &__item{
         @include media-breakpoint-down(md){
             border-bottom: solid;

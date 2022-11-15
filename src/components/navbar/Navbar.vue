@@ -2,8 +2,8 @@
   <div class="navigation">
     <div class="row">
       <div class="col">
-        <div class="burger-btn navigation__hamburger ">
-          <button class="navigatin__togler" @click="showMenu()">
+        <div class="">
+          <button class="burger-btn navigation__toggler" @click="showMenu()">
             <span class="burger-btn__item"></span>
             <span class="burger-btn__item"></span>
             <span class="burger-btn__item"></span>
@@ -28,7 +28,7 @@
     >
       <div>
         <h2 @click="goMain()" class="navigation__heading">
-          <span class="navigation__logo"></span>Dashboard
+          Dashboard
           <span class="navigation__version">v.01</span>
         </h2>
       </div>
@@ -39,26 +39,26 @@
         </div>
         <div class=" navigation__item">
           <span class="icon icon-product navigation__icon"></span> Product
-          <span class="icon icon-chevron navigation__icon"></span>
+          <span class="icon icon__right-arrow navigation__icon"></span>
         </div>
         <div
           @click="goCustomers()"
           class=" navigation__item navigation__item_active"
         >
           <span class="icon icon-customers navigation__icon"></span> Customers
-          <span class="icon icon-chevron-active navigation__icon"></span>
+          <span class="icon icon__right-arrow-active navigation__icon"></span>
         </div>
         <div class=" navigation__item">
           <span class="icon icon-income navigation__icon"></span> Income
-          <span class="icon icon-chevron navigation__icon"></span>
+          <span class="icon icon__right-arrow navigation__icon"></span>
         </div>
         <div class=" navigation__item">
           <span class="icon icon-promote navigation__icon"></span> Promote
-          <span class="icon icon-chevron navigation__icon"></span>
+          <span class="icon icon__right-arrow navigation__icon"></span>
         </div>
         <div class=" navigation__item">
           <span class="icon icon-help navigation__icon"></span> Help
-          <span class="icon icon-chevron navigation__icon"></span>
+          <span class="icon icon__right-arrow navigation__icon"></span>
         </div>
       </div>
       <div class="profile">

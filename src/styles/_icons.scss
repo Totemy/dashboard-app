@@ -3,7 +3,7 @@
         content: "";
         background-repeat: no-repeat;
     }
-    &-search{   // - to _
+    &__search{ 
       &:before {
         position: absolute;
         content: url(/images/customers/search.svg);
@@ -17,10 +17,10 @@
         }
       }
     }
-    &-chevron{ //right arrow
+    &__right-arrow{ 
       &:before {
         position: absolute;
-        content: url(/images/navbar/chevron-right.svg); //right arrow
+        content: url(/images/navbar/right-arrow.svg); 
         right: 0px;
         bottom: 4px;
         @include media-breakpoint-down(md) {
@@ -29,7 +29,7 @@
       }
       &-active{
         position: absolute;
-        content: url(/images/navbar/chevron-right-active.svg); //image mask in svg
+        content: url(/images/navbar/right-arrow-active.svg); //image mask in svg
         right: 0px;
         bottom: 14px;
         @include media-breakpoint-down(md) {

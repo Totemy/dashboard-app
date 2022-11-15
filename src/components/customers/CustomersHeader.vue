@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="searchbar">
-      <span class="icon icon-search"></span>
+      <span class="icon icon__search"></span>
       <input class="searchbar__input" type="text" placeholder="Search" />
     </div>
   </div>
