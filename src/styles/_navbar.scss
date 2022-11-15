@@ -14,13 +14,19 @@
     font-size: 26px;
     line-height: 46px;
     padding-bottom: 34px;
-    &::before{
-
-      content: url(/images/icons/logo.svg);
+    &::before {
+      content: "";
+      background: url(/images/icons/logo.svg) no-repeat;
+      padding: 0px 0px 0px 40px;
     }
     &_mobile{
       @include media-breakpoint-up(md) {display: none;}
       margin: 10px;
+      &::before {
+        content: "";
+        background: url(/images/icons/logo.svg) no-repeat;
+        padding: 0px 0px 0px 40px;
+      }
     }
   }
   &__content{
