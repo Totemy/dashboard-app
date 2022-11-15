@@ -14,6 +14,8 @@
     font-size: 26px;
     line-height: 46px;
     padding-bottom: 34px;
+    // padding: 0px 0px 0px 43px;
+    // background: url(/images/icons/logo.svg) 0 50% no-repeat;
     &::before {
       content: "";
       background: url(/images/icons/logo.svg) no-repeat;
@@ -21,7 +23,7 @@
     }
     &_mobile{
       @include media-breakpoint-up(md) {display: none;}
-      margin: 10px;
+      margin: 8px;
       &::before {
         content: "";
         background: url(/images/icons/logo.svg) no-repeat;
@@ -51,7 +53,6 @@
     color: $navbarItemColor;
     @include media-breakpoint-down(md) {
       min-width: 100%;
-      text-align: center;
     }
     &_active{
       color: $whiteColor;
