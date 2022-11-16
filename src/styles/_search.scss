@@ -14,8 +14,8 @@
         height: 24px;
     }
     @include media-breakpoint-down(md){
-        &__input{
-            margin: 20px;
+        &__icon{
+           display: none;
         }
     }
 }

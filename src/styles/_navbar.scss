@@ -4,30 +4,28 @@
   position: fixed;
   left: 0;
   top:0 ;
+  overflow-y: auto;
   &__toggler{
     padding: 15px;
   }
   &__heading {
-
     @include media-breakpoint-down(md) {display: none;}
     font-weight: 600;
     font-size: 26px;
     line-height: 46px;
-    padding-bottom: 34px;
-    // padding: 0px 0px 0px 43px;
-    // background: url(/images/icons/logo.svg) 0 50% no-repeat;
+    margin-bottom: 50px;
     &::before {
-      content: "";
-      background: url(/images/icons/logo.svg) no-repeat;
-      padding: 0px 0px 0px 40px;
+      content: url(/images/icons/logo.svg);
+      vertical-align: middle;
+      line-height: 1;
     }
     &_mobile{
       @include media-breakpoint-up(md) {display: none;}
-      margin: 8px;
+      margin: 8px 0px 0px 0px;
       &::before {
-        content: "";
-        background: url(/images/icons/logo.svg) no-repeat;
-        padding: 0px 0px 0px 40px;
+        content: url(/images/icons/logo.svg);
+        vertical-align: middle;
+        line-height: 1;
       }
     }
   }
@@ -77,6 +75,7 @@
     right: 0;
     z-index: 1030;
     top:0;
+    overflow-y: unset;
     &__content{
       padding-top: 10px;
       position: absolute;
@@ -110,9 +109,11 @@
 }
 .profile{
   display: flex;
-  position: absolute;
+  position: fixed;
   bottom: 30px;
-  width: 100%;
+  width: auto;
+  padding: 20px 40px 20px 0px;
+  background-color:  $whiteColor;
   &__title{
     margin-left: 25px;
   }
@@ -124,6 +125,7 @@
     position: relative;
     bottom: 0px;
     justify-content: center;
+    background-color: $navbarContentColor;
     &__title{
       color: $whiteColor;
     }
