@@ -1,4 +1,4 @@
-# glivera-app
+# Pixel perfect dashboard app with some pages
 
 ## Design
 
